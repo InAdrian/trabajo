@@ -1,0 +1,104 @@
+/* Fuente general */
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.choices {
+  margin: 20px 0;
+}
+
+.choices button {
+  background: white;
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.choices button:hover {
+  background: #333;
+  color: white;
+  transform: scale(1.08);
+}
+
+/* Sección de batalla */
+.battlefield {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  gap: 60px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player h2 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.box {
+  width: 160px;
+  height: 160px;
+  border: 3px solid #444;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 10px;
+  text-align: center;
+}
+
+.vs {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e53935;
+}
+
+.result {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%   { transform: translateY(-20px); }
+  50%  { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+.box.animate {
+  animation: bounce 0.5s ease;
+}

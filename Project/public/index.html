@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Piedra Papel Tijera Lagarto Spock</title>
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>✊✋✌🤏🖖 Piedra, Papel, Tijera, Lagarto, Spock 🖖🤏✌✋✊</h1>
+    <p class="subtitle">Selecciona una opción para comenzar 👇</p>
+  </header>
+
+  <!-- Opciones -->
+  <div class="choices">
+    <button onclick="play('piedra')">✊ Piedra</button>
+    <button onclick="play('papel')">✋ Papel</button>
+    <button onclick="play('tijera')">✌ Tijera</button>
+    <button onclick="play('lagarto')">🤏 Lagarto</button>
+    <button onclick="play('spock')">🖖 Spock</button>
+  </div>
+
+  <!-- Combate -->
+  <div class="battlefield">
+    <div class="player">
+      <h2>Tú</h2>
+      <div class="box" id="user-choice">Tu elección</div>
+      <p id="user-score">Victorias: 0</p>
+    </div>
+    <div class="vs">⚡ VS ⚡</div>
+    <div class="player">
+      <h2>Máquina</h2>
+      <div class="box" id="computer-choice">Esperando...</div>
+      <p id="computer-score">Victorias: 0</p>
+    </div>
+  </div>
+
+  <!-- Resultado -->
+  <div class="result" id="winner">Resultado: Esperando tu elección...</div>
+
+  <!-- Script -->
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
